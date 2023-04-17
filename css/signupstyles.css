@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-img {
-    width: 190px;
-    margin-left: 10px;
-}
+@media screen and (max-width: 300px)
+{}
 
 @font-face {
   font-family: 'Franklin Gothic Heavy Regular';
@@ -15,19 +12,18 @@ img {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.btn-outline-success {
-  color: rgb(0, 0, 0);
+
+img {
+    width: 190px;
+    margin-left: 10px;
 }
 
 body {
-    background-image:  url("../images/drowsybg.png");
+    background-image:  url("../images/drowsybgnotext.png");
     background-color:#b5d0ea;
 }
 
-.navbar-custom {
-  background-color: #87a6cc;
-}
-
-.nav-link {
-  color:white;
+h1, h6 {
+  text-align: center;
+  font-family: 'Franklin Gothic Heavy Regular', 'sans-serif';
 }
