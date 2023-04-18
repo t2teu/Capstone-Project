@@ -22,7 +22,7 @@ body {
     margin:10px;
   }
   
-  p {
+  p, h6 {
     font-size:90%;
     color:gray;
   }
@@ -32,3 +32,4 @@ body {
     margin-top: 70px;
     font-size: 400%;
   }
+  

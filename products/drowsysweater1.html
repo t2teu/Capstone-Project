@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>drowsy.</title>
+</head>
+    
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-custom navbar-expand-lg">
+      <div class="container-fluid">
+        <!--logo-->
+        <a class="navbar-brand" href="#"><img src="../images/drowsylogo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--navigation-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cart.html">cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../signin.html">sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../signup.html">sign up</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-white mt-5 mb-5 p-5 rounded" style="max-width: 800px;">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <a href="../index.html" class="text-secondary small"><i class="fa fa-chevron-left"></i> Back to Home</a>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded shadow p-3">
+              <img id="sweater" src="../images/drowsysweater1.png" alt="Product Image" class="img-fluid rounded" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded shadow p-3">
+              <h2>Drowsy Sweater (Sonic Blue)</h2>
+              <p class="lead">Big oversized drop-shoulder sweater in sonic blue</p>
+              <p>Price: $30.00</p>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <div class="form-group mb-4">
+                  <label for="size">Size:</label>
+                  <select class="form-control" id="size" name="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-3">Add to cart</button>
+                 <ul>
+                    <li>Color: Sonic blue</li>
+                    <li>Style: Casual pullover sweater</li>
+                    <li>Pattern: Plain design</li>
+                    <li>Neckline: Round neck</li>
+                    <li>Sleeve length: Long sleeve with drop shoulder style</li>
+                    <li>Length: Regular</li>
+                    <li>Fit: Oversized with slight stretch in fabric material</li>
+                    <li>Material composition: 95% Polyester and 5% Spandex</li>
+                    <li>Care instructions: Hand wash or professional dry clean</li>
+                    <li>Sheerness: No transparency or sheerness in the fabric</li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>

@@ -1,0 +1,12 @@
+body {
+    background-image:  url("../images/drowsybgblue.png");
+    background-color:#b5d0ea;
+}
+
+.kirby {
+    text-align: center;
+}
+
+img#kirbo {
+    width: 300px;
+}

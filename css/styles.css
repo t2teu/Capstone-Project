@@ -5,11 +5,15 @@ img {
     margin-left: 10px;
 }
 
+
 @font-face {
   font-family: 'Franklin Gothic Heavy Regular';
   src: url('../Franklin Gothic Heavy Regular.ttf');
 }
 
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .btn-outline-success {
   color: rgb(0, 0, 0);
@@ -26,4 +30,17 @@ body {
 
 .nav-link {
   color:white;
+}
+
+main {
+  background-color: #87a6cc;
+}
+
+#sweater {
+width: 100%;
+height: auto;
+}
+
+ul {
+  color: grey;
 }
