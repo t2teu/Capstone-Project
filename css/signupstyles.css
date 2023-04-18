@@ -12,18 +12,27 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-img {
-    width: 190px;
-    margin-left: 10px;
-}
-
 body {
-    background-image:  url("../images/drowsybgnotext.png");
+    background-image:  url("../images/drowsybgblue.png");
     background-color:#b5d0ea;
 }
 
-h1, h6 {
+.signup {
+  margin:100px;
+  margin-top:30px;
+}
+
+.row {
+  margin:10px;
+}
+
+p {
+  font-size:90%;
+  color:gray;
+}
+
+h1 {
   text-align: center;
-  font-family: 'Franklin Gothic Heavy Regular', 'sans-serif';
+  margin-top: 70px;
+  font-size: 400%;
 }

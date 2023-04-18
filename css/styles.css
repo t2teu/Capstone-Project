@@ -10,10 +10,6 @@ img {
   src: url('../Franklin Gothic Heavy Regular.ttf');
 }
 
-* {
-  box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .btn-outline-success {
   color: rgb(0, 0, 0);
