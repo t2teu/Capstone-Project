@@ -53,3 +53,26 @@ height: auto;
 ul {
   color: grey;
 }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.see-more {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  margin-right: 40px;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.see-more:hover {
+  opacity: 1;
+}

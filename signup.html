@@ -19,7 +19,7 @@
   <nav class="navbar navbar-custom navbar-expand-lg">
     <div class="container-fluid">
       <!--logo-->
-      <a class="navbar-brand" href="#"><img src="images/drowsylogo.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/drowsylogo.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,19 +47,24 @@
     </div>
   </nav>
   
-    <h1>Sign up!</h1>
-   <form class="signup">
+  <h1>Sign up!</h1>
+  <form class="signup" onsubmit="return validateForm()">
     <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+      <input type="username" class="form-control" id="username" placeholder="supernerd">
+      <label for="username">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      <label for="email">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-      <p> Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</p>
+      <input type="password" class="form-control" id="password" placeholder="Password">
+      <label for="password">Password</label>
+      <p>Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</p>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-       <label for="floatingPassword">Confirm password</label>
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password">
+        <label for="confirm_password">Confirm password</label>
+      </div>
     </div>
     <fieldset class="row mb-4">
       <legend class="col-form-label col-sm-2 pt-0">How did you hear about us?</legend>
@@ -82,10 +87,52 @@
             YouTube
           </label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+          <label class="form-check-label" for="gridRadios4">
+            Friends and/or family
+          </label>
+        </div>
       </div>
     </fieldset>
     <button type="submit" class="btn btn-primary">Sign in</button>
   </form>
+  
+  <!--form validation-->
+  <script>
+  function validateForm() {
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    const confirm_password = document.getElementById("confirm_password");
+    const radios = document.getElementsByName("gridRadios");
+    let checked = false;
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        checked = true;
+        break;
+      }
+    }
+    if (email.value === "") {
+      alert("Email address must be filled out");
+      return false;
+    }
+    if (password.value === "") {
+      alert("Password must be filled out");
+      return false;
+    }
+    if (confirm_password.value === "") {
+      alert("Confirm password must be filled out");
+      return false;
+    }
+    if (password.value !== confirm_password.value) {
+      alert("Passwords do not match");
+      return false;
+    }
+  }
+  </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
   

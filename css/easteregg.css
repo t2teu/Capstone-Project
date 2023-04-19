@@ -1,13 +1,13 @@
 * {
-    text-align: center;
-    margin-top: 5px;
+	text-align: center;
+	margin-top: 5px;
 }
 
 body {
-    background-image: url('../images/drowsybgblue.png');
+	background-image: url('../images/drowsybgblue.png');
 }
 
 .kirby {
-    margin: 200px;
-    text-align: center;
+	margin: 200px;
+	text-align: center;
 }

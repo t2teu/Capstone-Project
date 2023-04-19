@@ -4,8 +4,43 @@
     width: 500px;
 }
 
-.container {
+.images {
     margin-top: 600px;
     text-align: center;
   }
-  
+
+.cards {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    opacity: 0.88;
+}
+
+.shine {
+    margin-top: 2870px;
+    margin-left: 100px;
+    position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 500px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow:
+    0 0 60px 30px #e415c8a6,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
+}
+
+.shine2 {
+    margin-top: 2870px;
+    margin-left: -500px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 450px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow:
+    0 0 60px 30px #f81fdb83,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
+}
