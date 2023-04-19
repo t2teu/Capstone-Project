@@ -1,3 +1,7 @@
+body {
+	background-image: url('../images/drowsybgblueanimation.png');
+}
+
 @keyframes myAnim {
 	0% {
 		opacity: 0;
@@ -10,3 +14,62 @@
 	}
 }
 
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+img#star1 {
+	position:absolute;
+	width:20%;
+	animation: myAnim2 30s ease 0s infinite normal forwards;
+	margin-left: px;
+	margin-top
+}
+
+img#star2 {
+	width:20%;
+	margin-left:-110px;
+	animation: myAnim2 30s ease 0s infinite normal forwards;
+}
+
+.welcome {
+    margin-left: 400px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+img#welcome {
+    width:40%;
+	height:40%;
+}
+
+div#scroll-message {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
