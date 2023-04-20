@@ -19,10 +19,10 @@ All the images in the website, except the GIFs of Kirby, were all created by me 
 
 The best accomplishments in the site are definitely the opening scrolling image and the disappearing message telling the user to scroll down.
 
-![HOMEPAGE](images/ds1.PNG)
-![EXAMPLE OF ONE PRODUCT PAGE](images/ds7.PNG)
-![CARTPAGE](images/ds2.PNG)
-![CHECKOUTPAGE](images/ds5.PNG)
-![PURCHASECONFIRMATIONPAGE](images/ds6.PNG)
-![SIGNUPPAGE](images/ds4.PNG)
-![SIGNINPAGE](images/ds3.PNG)
+![HOMEPAGE](images/ds1.png)
+![EXAMPLEOFONEPRODUCTPAGE](images/ds7.png)
+![CARTPAGE](images/ds2.png)
+![CHECKOUTPAGE](images/ds5.png)
+![PURCHASECONFIRMATIONPAGE](images/ds6.png)
+![SIGNUPPAGE](images/ds4.png)
+![SIGNINPAGE](images/ds3.png)
