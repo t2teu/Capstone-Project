@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>drowsy.</title>
 </head>
-    
-<body>
+
+<header>
   <!--navbar-->
   <nav class="navbar navbar-custom navbar-expand-lg">
     <div class="container-fluid">
@@ -46,7 +46,8 @@
       </div>
     </div>
   </nav>
-  
+  </header>
+<body> 
       <!--sign up page-->
   <h1>Sign up!</h1>
   <form class="signup" onsubmit="return validateForm()">
@@ -113,6 +114,10 @@
         checked = true;
         break;
       }
+    }
+    if (username.value === "") {
+      alert("Username must be filled out");
+      return false;
     }
     if (email.value === "") {
       alert("Email address must be filled out");

@@ -13,39 +13,42 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>drowsy.</title>
 </head>
-    
-<body>
+  
+<header>
   <!--navbar-->
-        <nav class="navbar navbar-custom navbar-expand-lg">
-            <div class="container-fluid">
-              <!--logo-->
-              <a class="navbar-brand" href="index.html"><img src="images/drowsylogo.png" alt="drowsy logo in navigation bar"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!--navigation-->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="cart.html">cart</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="signin.html">sign in</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="signup.html">sign up</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+  <nav class="navbar navbar-custom navbar-expand-lg">
+    <div class="container-fluid">
+      <!--logo-->
+      <a class="navbar-brand" href="index.html"><img src="images/drowsylogo.png" alt="drowsy logo in navigation bar"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--navigation-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html">sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">sign up</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </header>
+  
+<body>
       <!--checkout section-->
       <div class="checkout">
         <div class="container bg-white">
@@ -80,15 +83,18 @@
               <form>
                 <div class="form-group">
                   <label for="cardNumber">Card Number</label>
-                  <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                  <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" pattern="[0-9]{16}" maxlength="16" required>
+                  <small class="form-text text-muted">Enter a 16-digit card number.</small>
                 </div>
                 <div class="form-group">
-                  <label for="expiryDate">Expiry Date</label>
-                  <input type="text" class="form-control" id="expiryDate" placeholder="Enter expiry date">
+                  <label for="expiryDate">Expiration Date</label>
+                  <input type="text" class="form-control" id="expiryDate" placeholder="Enter expiration date" pattern="(0[1-9]|1[0-2])/[0-9]{2}" required>
+                  <small class="form-text text-muted">Enter a valid expiration date in the format MM/YY.</small>
                 </div>
                 <div class="form-group">
                   <label for="cvv">CVV</label>
-                  <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                  <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" pattern="[0-9]{3,4}" maxlength="4" required>
+                  <small class="form-text text-muted">Enter a 3 or 4-digit CVV number.</small>
                 </div>
               </form>
               <h3>Order Summary</h3>
@@ -103,23 +109,28 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Product 1</td>
+                    <td>Drowsy Sweater (Dark Puce)</td>
                     <td>1</td>
-                    <td>$10.00</td>
+                    <td>$30.00</td>
                   </tr>
                   <tr>
-                    <td>Product 2</td>
-                    <td>2</td>
+                    <td>Drowsy Pajamas</td>
+                    <td>1</td>
                     <td>$20.00</td>
                   </tr>
                   <tr>
-                    <td>Product 3</td>
+                    <td>Drowsy Hoodie (Navy)</td>
                     <td>1</td>
-                    <td>$15.00</td>
+                    <td>$30.00</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td></td>
+                    <td>$4.39</td>
                   </tr>
                 </tbody>
               </table>
-              <p>Total: $45.00</p>
+              <p>Total: $84.39</p>
               <a href="purchasesuccessful.html" class="btn btn-dark" role="button">Place Order!</a>
             </div>
           </div>

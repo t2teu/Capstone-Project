@@ -26,36 +26,40 @@
 		}
 </style>
 </head>
-<body>
-	<!--navbar-->
-	<nav class="navbar navbar-custom navbar-expand-lg">
-		<div class="container-fluid">
+	<header>
+		<!--navbar-->
+		<nav class="navbar navbar-custom navbar-expand-lg">
+		  <div class="container-fluid">
 			<!--logo-->
 			<a class="navbar-brand" href="index.html"><img src="images/drowsylogo.png" alt="drowsy logo in navigation bar"></a>
-			<div>
-				<a class="dot" href="easteregg.html">.</a>
-			</div><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <!--navigation-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<!--navigation-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="cart.html">cart</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="signin.html">sign in</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="signup.html">sign up</a>
-					</li>
-				</ul>
-				<form class="d-flex" role="search">
-					<input aria-label="Search" class="form-control me-2" placeholder="Search" type="search"> <button class="btn btn-outline-warning" type="submit">Search</button>
-				</form>
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="cart.html">cart</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="signin.html">sign in</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="signup.html">sign up</a>
+				</li>
+			  </ul>
+			  <form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-warning" type="submit">Search</button>
+			  </form>
 			</div>
-		</div>
-	</nav>
+		  </div>
+		</nav>
+	</header>
+	<body>
 	<div class="welcome">
 	<img id="star2" src="images/star2.png" alt="animated star-left">
 	<img id="welcome" src="images/welcometodrowsy.png" alt="animated welcome message">
