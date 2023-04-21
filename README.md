@@ -1,7 +1,7 @@
 # Capstone Project
  Week 2 Capstone Project of "drowsy", an e-commerce site for Mailjard's class
  
-(To download my code, click on the Release link on the right)
+(To download my code, click on the Release link up and to the right)
 
 In this project, I created "drowsy", a website that sells comfy clothes that look good, feel great, and makes you lounge at home even better. The color scheme are light colors that you'd find in a child's bedroom that emphasize the "cozy" feeling.
 
